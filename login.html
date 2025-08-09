@@ -2,97 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Volunteer Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Dashboard Login</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #ff6f61, #ffb347);
             margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
-        }
-        .login-box {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-            width: 300px;
             text-align: center;
         }
-        .login-box h2 {
-            margin-bottom: 20px;
+        header {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #d32f2f;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
             color: #333;
         }
-        input {
-            padding: 12px;
-            margin: 10px 0;
-            width: 100%;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            outline: none;
-            font-size: 14px;
-            box-sizing: border-box;
-            transition: all 0.3s ease;
-        }
-        input:focus {
-            border-color: #ff6f61;
-            box-shadow: 0 0 5px rgba(255, 111, 97, 0.5);
-        }
-        button {
-            padding: 12px;
-            width: 100%;
-            cursor: pointer;
-            background: #ff6f61;
+        a.login-btn {
+            background-color: #d32f2f;
             color: white;
-            border: none;
+            padding: 12px 24px;
+            font-size: 1.2rem;
+            text-decoration: none;
             border-radius: 8px;
-            font-size: 16px;
-            transition: background 0.3s, transform 0.2s;
+            transition: background-color 0.3s ease;
         }
-        button:hover {
-            background: #ff3b2e;
-            transform: scale(1.02);
-        }
-        #error {
-            color: red;
-            margin-top: 10px;
-            font-size: 14px;
+        a.login-btn:hover {
+            background-color: #b71c1c;
         }
     </style>
 </head>
 <body>
-    <div class="login-box">
-        <h2>Volunteer Login</h2>
-        <input type="text" id="username" placeholder="Enter username">
-        <input type="password" id="password" placeholder="Enter password">
-        <button onclick="checkLogin()">Login</button>
-        <p id="error"></p>
-    </div>
-
-    <script>
-        const allowedUsers = ["alice", "bob", "charlie", "dave"];
-
-        function checkLogin() {
-            const username = document.getElementById('username').value.trim().toLowerCase();
-            const pass = document.getElementById('password').value;
-            const errorMsg = document.getElementById('error');
-
-            if (!allowedUsers.includes(username)) {
-                errorMsg.innerText = 'Invalid username.';
-                return;
-            }
-            if (pass !== 'santatoohey2023') {
-                errorMsg.innerText = 'Incorrect password.';
-                return;
-            }
-
-            sessionStorage.setItem('volunteerLoggedIn', 'true');
-            sessionStorage.setItem('volunteerUsername', username);
-            window.location.href = 'events.html';
-        }
-    </script>
+    <header>Team Dashboard</header>
+    <p>Click below to log in and access the team dashboard.</p>
+    <a class="login-btn" href="https://sites.google.com/view/santatooheymission" target="_blank">
+        Login with Google
+    </a>
 </body>
 </html>
-
