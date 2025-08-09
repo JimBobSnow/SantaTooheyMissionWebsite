@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Volunteer Events</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            padding: 20px; 
+        }
+        iframe { 
+            border: 0; 
+            width: 90%; 
+            height: 600px; 
+        }
+        #welcome {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upcoming Volunteer Events</h1>
+    <p id="welcome"></p>
+    
+    <!-- Example: Embedded Google Calendar -->
+    <iframe src="https://calendar.google.com/calendar/embed?src=en.australian%23holiday%40group.v.calendar.google.com&ctz=Australia%2FSydney"></iframe>
+
+    <script>
+        // Check login status
+        if (sessionStorage.getItem('volunteerLoggedIn') !== 'true') {
+            window.location.href = 'login.html';
+        } else {
+            const username = sessionStorage.getItem('volunteerUsername') || 'Volunteer';
+            document.getElementById('welcome').innerText = 'Welcome, ' + username + '!';
+        }
+    </script>
+</body>
+</html>
+
