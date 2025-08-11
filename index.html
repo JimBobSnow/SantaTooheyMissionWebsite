@@ -3,57 +3,81 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Home — Santa Toohey Mission</title>
+<title>Santa Toohey Mission</title>
 <link rel="icon" type="image/png" href="assets/images/favicon.png">
 <link rel="stylesheet" href="assets/css/style.css">
+<style>
+  /* Extra layout for 3 columns */
+  .three-columns {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .three-columns .card-inner {
+    flex: 1;
+    min-width: 280px;
+  }
+</style>
 </head>
 <body>
+
 <header class="site">
   <div class="container" style="display:flex;align-items:center">
     <div class="brand">
       <img src="assets/images/logo.png" class="site-logo" alt="Santa Toohey Mission logo">
-      <div style="margin-left:8px"><div style="font-weight:700">Santa Toohey Mission</div><div class="small muted">Increasing personal freedom through education &amp; support</div></div>
+      <div style="margin-left:8px">
+        <div style="font-weight:700">Santa Toohey Mission</div>
+        <div class="small muted">Increasing personal freedom through education &amp; support</div>
+      </div>
     </div>
-    <nav><div class="navlinks">
-      <a href="index.html">Home</a>
-      <a href="blog.html">Blog</a>
-      <a href="aid.html">Request Aid</a>
-      <a href="volunteer.html">Volunteer</a>      
-    </div></nav>
+    <!-- nav removed -->
   </div>
 </header>
+
 <main class="container">
 
-<section class="card-inner hero">
-  <div style="flex:1">
-    <h1>Welcome to Santa Toohey Mission</h1>
-    <p class="lead">We're a small charity based in the Philippines supporting children, schools, and individuals so they can achieve more and gain personal freedom.</p>
-    <div style="margin-top:12px">
-      <a href="aid.html" class="button">Request Aid</a>
-      <a href="volunteer.html" style="margin-left:8px" class="button">Volunteer</a>
-      <a href="login.html" style="margin-left:8px" class="button">Login</a>
+  <!-- HERO -->
+  <section class="card-inner hero">
+    <div style="flex:1">
+      <h1>Welcome to Santa Toohey Mission</h1>
+      <p class="lead">Inspired by Santa Claus, I want to bring kindness, generosity, and long-term freedom to others through community projects, volunteer connecting, and hands-on help.</p>
     </div>
-    <div class="card-inner" style="margin-top:18px">
-      <strong>Our most recent projects</strong>
-      <div id="latestPosts" style="margin-top:8px">
-      
-      
-<!Recent projects>      
-        <div class="post"><a href="post1.html"><strong>The Very First Charity Giveaway</strong></a><div class="meta">2025-08-08</div><div class="small">December 2024 I ran my very first giveaway. We handed out toys to 22 kids and provided a dinner to 5 families.</div></div>
-        
-        <div class="post"><a href="post2.html"><strong>January: food & school supplies</strong></a><div class="meta">2025-06-15</div><div class="small">We provided school supplies, shoes, bags, hegine kits, and some meals.</div></div>
-        
-        
-     
-      </div>  
-      <div style="margin-top:8px"><a href="blog.html" class="small">View all posts →</a></div>
-    </div>
-  </aside>
-</section>
-</section>
+  </section>
+
+  <!-- THREE COLUMN SECTION -->
+  <div class="three-columns">
+    
+    <!-- ABOUT ME -->
+    <section class="card-inner">
+      <h2>About Me</h2>
+      <p>I’ve wanted to be like Santa Claus ever since I was little. Now I'm making that dream real by helping communities and individuals. When I have free time or am unable to fund my own projects, I spend it volunteering to support others with theirs.</p>
+      <p><u>This is not an official charity and I do not collect any donations.</u></p>
+    </section>
+
+    <!-- COMMUNITY PROJECTS -->
+    <section class="card-inner">
+      <h2>Community Projects</h2>
+      <p>I’ve taken a shift in my approach to helping others. In the past, I’ve given away Christmas presents and hosted meal giveaways, but now I focus on providing resources that offer long-term benefits for the people who receive them. At the moment, my efforts are centered on school-related needs, but I’m always open to addressing other community challenges and individual problems.</p>
+      <div style="margin-top:12px">
+        <a href="https://forms.gle/9N7dL4g69XdGr8RT9" target="_blank" class="button">Request Aid Form</a>
+      </div>
+    </section>
+
+    <!-- VOLUNTEERING -->
+    <section class="card-inner">
+      <h2>Volunteering</h2>
+      <p>I’m always looking for individuals who can lend a hand, as my own resources are limited. My goal is to build a team of volunteers who can not only help me with my projects but also assist others with theirs. I’ll never share your information. If I think you're a good match for one of my projects or someone else's, I’ll contact you directly.</p>
+      <div style="margin-top:12px">
+        <a href="https://forms.gle/jSA15g8E161H6uFF7" target="_blank" class="button">Sign Up To Volunteer</a>
+      </div>
+    </section>
+
+  </div>
+
+</main>
 
 <footer>&copy; Santa Toohey Mission — All rights reserved</footer>
-</main>
-<script src="assets/js/main.js"></script>
+
 </body>
 </html>
