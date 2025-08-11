@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Santa Toohey Mission</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #f9f9f9;
+  }
+
+  /* HEADER */
+  header {
+    background: #e8e8e8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  header img { height: 40px; }
+
+  /* HERO */
+  .hero {
+    position: relative;
+    background: url('hero.png') center/cover no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.4);
+  }
+  .hero h1, .hero p { position: relative; z-index: 1; }
+  .hero h1 { font-size: 26px; margin: 0; font-weight: bold; }
+  .hero p { font-size: 16px; max-width: 800px; line-height: 1.4; font-weight: bold; }
+
+  /* OVERVIEW */
+  .overview {
+    background: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  /* CONTENT */
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px;
+    background: white;
+  }
+  .column {
+    flex: 1;
+    min-width: 280px;
+    padding: 20px;
+  }
+  .column h2 { font-size: 20px; font-weight: bold; margin-bottom: 10px; }
+  .column p { font-size: 15px; line-height: 1.6; }
+  .column u { text-decoration-thickness: 2px; }
+
+  .btn {
+    display: inline-block;
+    padding: 8px 15px;
+    border: 1px solid black;
+    background: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  .btn:hover { background: #ddd; }
+
+  /* small screens */
+  @media (max-width: 720px) {
+    .hero { height: 220px; padding: 10px; }
+    .hero h1 { font-size: 22px; }
+    .overview { font-size: 22px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div>
+    <img src="logo.png" alt="Santa Toohey Logo" />
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>SANTA TOOHEY MISSION</h1>
+  <p>Inspired by Santa Claus, I want to bring kindness, generosity, and long-term freedom to others through community projects, volunteer connecting, and hands-on help.</p>
+</div>
+
+<!-- OVERVIEW BAR -->
+<div class="overview">OVERVIEW</div>
+
+<!-- CONTENT -->
+<div class="content">
+  <div class="column">
+    <h2>About Me</h2>
+    <p>I’ve wanted to be like Santa Claus ever since I was little. Now I'm making that dream real by helping communities and individuals. When I have free time or am unable to fund my own projects, I spend it volunteering to support others with theirs.</p>
+    <p><u>This is not an official charity and I do not collect any donations.</u></p>
+  </div>
+
+  <div class="column">
+    <h2>Community Projects</h2>
+    <p>I’ve taken a shift in my approach to helping others. In the past, I’ve given away Christmas presents and hosted meal giveaways, but now I focus on providing resources that offer long-term benefits for the people who receive them. At the moment, my efforts are centered on school-related needs, but I’m always open to addressing other community challenges and individual problems.</p>
+    <a class="btn" href="https://forms.gle/9N7dL4g69XdGr8RT9" target="_blank" rel="noopener noreferrer">Request Aid Form</a>
+  </div>
+
+  <div class="column">
+    <h2>Volunteering</h2>
+    <p>I’m always looking for individuals who can lend a hand, as my own resources are limited. My goal is to build a team of volunteers who can not only help me with my projects but also assist others with theirs. I’ll never share your information. If I think you're a good match for one of my projects or someone else's, I’ll contact you directly.</p>
+    <a class="btn" href="https://forms.gle/jSA15g8E161H6uFF7" target="_blank" rel="noopener noreferrer">Sign Up To Volunteer</a>
+  </div>
+</div>
+
+</body>
+</html>
+
